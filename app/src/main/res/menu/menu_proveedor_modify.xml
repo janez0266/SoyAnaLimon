@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProveedoresModify">
+    <!--
+        <item
+            android:id="@+id/add"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:orderInCategory="1"
+            android:title="Agregar"
+            app:showAsAction="ifRoom" />  -->
+    <item
+        android:id="@+id/proveedor_guardar"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="1"
+        android:title="Guardar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btnmore"
+        android:icon="@drawable/ic_more_vert"
+        android:orderInCategory="2"
+        android:title="Mas"
+        app:showAsAction="always">
+        <menu>
+
+            <group android:id="@+id/grp1">
+                <item
+                    android:id="@+id/contacto"
+                    android:icon="@drawable/android"
+                    android:orderInCategory="90"
+                    android:title="Enlazar a Contacto Android" />
+                <item
+                    android:id="@+id/inicio"
+                    android:icon="@drawable/casa"
+                    android:orderInCategory="100"
+                    android:title="Ir al Inicio" />
+                <item
+                    android:id="@+id/close"
+                    android:icon="@drawable/ic_cancel"
+                    android:orderInCategory="110"
+                    android:title="Cerrar" />
+            </group>
+
+        </menu>
+    </item>
+</menu>

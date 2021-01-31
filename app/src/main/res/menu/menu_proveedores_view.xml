@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProveedoresView">
+    <!--
+        <item
+            android:id="@+id/add"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:orderInCategory="1"
+            android:title="Agregar"
+            app:showAsAction="ifRoom" />  -->
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/ic_mode_edit"
+        android:orderInCategory="1"
+        android:title="Editar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/btnmore"
+        android:icon="@drawable/ic_more_vert"
+        android:orderInCategory="2"
+        android:title="Mas"
+        app:showAsAction="always">
+        <menu>
+
+
+            <!--           <item
+                           android:id="@+id/search"
+                           android:icon="@android:drawable/ic_menu_search"
+                           android:orderInCategory="2"
+                           android:title="Buscar"
+                           app:showAsAction="ifRoom" />
+           -->
+            <item
+                android:id="@+id/delete"
+                android:icon="@drawable/ic_delete_forever"
+                android:orderInCategory="4"
+                android:title="Eliminar"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/VerContactoAndroid"
+                android:icon="@drawable/android"
+                android:orderInCategory="103"
+                android:title="Ver en Contactos Android"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/sms"
+                android:icon="@drawable/ic_contact_mail"
+                android:orderInCategory="103"
+                android:title="Enviar SMS"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sms_whatsapp"
+                android:icon="@drawable/ic_contact_mail"
+                android:orderInCategory="104"
+                android:title="Enviar Whatsapp"
+                app:showAsAction="never" />
+
+
+            <group android:id="@+id/grp1">
+                <item
+                    android:id="@+id/inicio"
+                    android:icon="@drawable/casa"
+                    android:orderInCategory="100"
+                    android:title="Ir al Inicio" />
+                <item
+                    android:id="@+id/close"
+                    android:icon="@drawable/ic_cancel"
+                    android:orderInCategory="110"
+                    android:title="Cerrar" />
+            </group>
+
+        </menu>
+    </item>
+</menu>
